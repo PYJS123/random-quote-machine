@@ -1,28 +1,53 @@
-@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+body {
+  background-color: rgb(228, 134, 31);
+}
+
 .quote {
-  font-family: "Cedarville Cursive", Arial;
+  font-family: "Raleway", Arial;
   font-size: 50px;
+  margin-bottom: 10px;
 }
 
 .author {
-  font-family: Raleway, Arial;
-  font-size: 18px;
+  font-family: "Raleway", Arial;
+  font-size: 20px;
+  text-align: right;
+  margin-bottom: 20px;
 }
 
-.card-container, .author, .quote {
+.button {
+  font-family: "Raleway", Arial;
+  width: 25%;
+  height: 100%;
+  background-color: rgb(228, 134, 31);
+  color: white;
+  font-weight: bolder;
+  font-size: 30px;
+  border-radius: 5px;
+  border-width: 0px;
+  overflow: hidden;
+}
+
+.button-container {
   text-align: center;
+  width: 100%;
+  height: 50px;
 }
 
-.quote::before {
-  content: open-quote;
+/* Vertical centre from https://www.w3schools.com/howto/howto_css_center-vertical.asp */
+.card-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
 }
 
-.quote::after {
-  content: close-quote;
-}
-
-.author::before {
-  content: "-";
+/* On hover from https://stackoverflow.com/questions/3898781/how-can-i-change-a-buttons-color-on-hover */
+.button:hover {
+  background-color: rgb(201, 107, 4);
 }
