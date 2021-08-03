@@ -28,6 +28,7 @@ window.onload = async function() {
   }, 50);
   let stream = await fetch('quotes.json');
   quotes = await stream.json();
+  newQuote();
 }
 
 function mouseOver() {
@@ -43,10 +44,8 @@ function newQuote() {
   curr = Math.floor(Math.random()*colours.length);
   col = colours[curr][0];
   let obj = quotes[Math.floor(Math.random()*quotes.length)];
-  setTimeout(() => {
-    document.getElementById('quoteText').textContent = obj.quote;
-    document.getElementById('authorText').textContent = obj.author;
-  }, 700);
+  document.getElementById('quoteText').textContent = obj.quote;
+  document.getElementById('authorText').textContent = obj.author;
 }
 
 function lerp(a, b, amt) {
