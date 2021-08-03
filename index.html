@@ -9,13 +9,13 @@
   <body>
     <div class="card-container">
       <div class="quote">
-        &#10075;&#10075;<span>Keep a cool heart, because then when you're angry, you can use it to cook soup.</span>&#10076;&#10076;
+        &#10075;&#10075;<span id="quoteText">Keep a cool heart, because then when you're angry, you can use it to cook soup.</span>&#10076;&#10076;
       </div>
       <div class="author">
-        &minus;<span>Author</span>
+        &minus;<span id="authorText">Author</span>
       </div>
       <div class="button-container">
-        <button class="button">
+        <button class="button" onmouseover="mouseOver()" onmouseout="mouseOut()" onclick="newQuote()">
           New quote
         </button>
       </div>
