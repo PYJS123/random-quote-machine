@@ -5,13 +5,16 @@
 let quotes;
 let darken = 25;
 let colours = [
-  ['rgb(228, 134, 31)', 'rgb(201, 107, 4)'],
-  ['rgb(42, 74, 198)', 'rgb(31, 53, 176)'],
-  ['rgb(50, 168, 82)', 'rgb(25, 132, 54)'],
-  ['rgb(55, 154, 184)', 'rgb(34, 126, 154)'],
-  ['rgb(130, 184, 55)', 'rgb(107, 166, 23)'],
-  ['rgb(184, 55, 166)', 'rgb(153, 37, 149)'],
-  ['rgb(184, 83, 55)', 'rgb(147, 32, 46)']
+  ['rgb(228, 134, 31)', 'rgb(201, 107, 4)'],  // Orange
+  ['rgb(42, 74, 198)', 'rgb(31, 53, 176)'],   // Blue
+  ['rgb(50, 168, 82)', 'rgb(25, 132, 54)'],   // Green
+  ['rgb(55, 154, 184)', 'rgb(34, 126, 154)'],  // Lighter blue
+  ['rgb(130, 184, 55)', 'rgb(107, 166, 23)'],  // Olive Green
+  ['rgb(184, 55, 166)', 'rgb(153, 37, 149)'],  // Deep Purple, pinkish
+  ['rgb(184, 83, 55)', 'rgb(147, 32, 46)'],   // Soft crimson red
+  ['rgb(184, 120, 55)', 'rgb(147, 32, 46)'],   // Reddish orange
+  ['rgb(184, 83, 55)', 'rgb(147, 32, 46)'],   // Velvet Purple
+  ['rgb(6, 158, 102)', 'rgb(147, 32, 46)']    // Tree/quiver green
 ];
 let curr = 0;
 let currCol = colours[curr][0],
